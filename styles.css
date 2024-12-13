@@ -20,7 +20,7 @@ a {
   padding: 10px 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 96%;
+  width: 100%;
   top: 0;
   z-index: 1000;
 }
@@ -132,3 +132,33 @@ a {
 .movies::-webkit-scrollbar-track {
   background: #222;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .navbar ul li {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
